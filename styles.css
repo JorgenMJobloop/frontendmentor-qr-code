@@ -1,3 +1,5 @@
+/*
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,11 @@
 }
 body {
   font-family: "Outfit", sans-serif;
-  /*max-width: 1440px;
-  min-width: 375px;*/
+  max-width: 1440px;
+  min-width: 375px;
   font-size: 15px;
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0; 
   background-color: hsl(210, 14%, 84%);
   line-height: 1.5;
 }
@@ -61,3 +63,8 @@ p {
 
 @media (min-width: 375px) {
 }
+*/
+
+/*
+  Solved with alternative inline-css by a teacher, new html document shows best practice.
+/
