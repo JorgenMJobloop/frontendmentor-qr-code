@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="..*/../qr-code-component-main/images/favicon-32x32.png" type="image/x-icon">
+    <!-- Below 3 links are copied from website https://fonts.google.com/specimen/Outfit#glyphs.  
+        Choose the font family you want and click SElECT THIS STYLE. 
+        To the right side pannel it will give you these 3 links and name of the font-family. Copy and paste it.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+        <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          }  /*To remove default margin and padding for all the elements*/
+        body{
+            background-color: hsl(212, 45%, 89%);     /*Light gray*/
+            min-height: 100vh; /*prevents the value of the height property from becoming smaller than the value specified for min-height.*/
+            
+            display: flex;   /*  Also give align-items: center; else container div takes full height of the page.*/
+            align-items: center;  /*You get to see container div to center once you add this property and value along 
+            with display: flex*/
+            justify-content: center; 
+            flex-direction: column;/*I used justify content, flex direction to bring the footer to the bottom of the div container.*/
+        }
+
+        .container{
+            margin:0% auto; /*To get the image to the center horizontally.*/
+            max-width: 365px;
+            /* width: fit-content; */
+            /* height: auto; */
+                       
+        }
+        .card{
+            background-color: hsl(0, 0%, 100%);     /*White*/
+            padding: 16px;
+            border-radius: 4%; /* or 17px rounded corners*/
+            text-align: center; /*To set img, h2,p to middle*/
+            /* justify-content: center; */
+            margin: 0 1em;  /* This top and bottom  margin no need so 0. left and right some space btwn container div and card div which is containing img and other text so 1em. This helps to give left and right space when you minimize the window width for small screens. To check right click->inspect-> choose small screens icon on top of console. */
+         
+        }
+        img{
+            width:100%;  /*  So that it wont overflow from.cotainer div*/
+            height: auto;
+            border-radius: 3%; /* or 12px*/
+        }
+         p,h2{
+            font-family: 'Outfit', sans-serif; /* You can give this in body also as there is only 2 text tags inthe project.*/
+
+            padding: 10px 20px;
+        } 
+        h2{
+            font-weight: 700;    /* Numeric keyword values bold size */
+            color: hsl(218, 44%, 22%);
+        }
+        p{
+            font-weight: 400;   /* Numeric keyword values normal size */
+            font-size: 15px;
+            color: hsl(220, 15%, 55%);  /*Grayish blue*/
+        }
+        .attribution{
+            padding: 5px 0;
+           font-size: 11px;
+           text-align-last: center; /*it bring the last line of the text to center when you decrease the screen size. You can mention it in media query if you want to.*/
+        }
+       /*  @media screen(min-width:1440px;) {desktop
+             
+        }*/
+      
+        /* @media screen and (max-width: 375px;) {
+  
+  } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <img src="image-qr-code.png" alt="Qrcode">
+            <div class="text">
+            <h2>Improve your front-end skills by buliding projects </h2>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+            </div>  
+            <!--   text div -->
+        </div>  
+        <!--   card div -->
+    </div>      
+    <!--   container div -->
+    <footer class="footer">
+        <div class="attribution">
+       <p class="attribution">  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded in <a href="">Pure HTML/CSS</a>.</p> 
+        </div>
+      </footer>
+</body>
+</html>
+
