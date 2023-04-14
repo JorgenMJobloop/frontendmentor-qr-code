@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+    docstring:
+        Solved by a teacher with good informative notes for best practice, I will not submit this solution, as it is not my own.
+        But the document will still be hosted on pages, to use as a reference for proper styling. - auth
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,7 +55,7 @@
             border-radius: 3%; /* or 12px*/
         }
          p,h2{
-            font-family: 'Outfit', sans-serif; /* You can give this in body also as there is only 2 text tags inthe project.*/
+            font-family: 'Outfit', sans-serif; /* You can give this in body also as there is only 2 text tags in the project.*/
 
             padding: 10px 20px;
         } 
@@ -66,15 +71,18 @@
         .attribution{
             padding: 5px 0;
            font-size: 11px;
-           text-align-last: center; /*it bring the last line of the text to center when you decrease the screen size. You can mention it in media query if you want to.*/
+           text-align-last: center; /*it brings the last line of the text to center when you decrease the screen size. You can mention it in media query if you want to.*/
         }
-       /*  @media screen(min-width:1440px;) {desktop
-             
-        }*/
+       @media screen(min-width:1440px;) {
+        }
       
-        /* @media screen and (max-width: 375px;) {
-  
-  } */
+       @media screen and (max-width: 375px;) {
+        }
+       @media (prefers-reduced-motion: reduce) {
+            body {
+                animation: none;
+                }
+        }
 
     </style>
 </head>
